@@ -1,0 +1,77 @@
+.breadcrumbs {
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background: #f5f5f5;
+    color: #616161;
+}
+.breadcrumbs a {
+    color: #757575;
+}
+.breadcrumbs a:hover {
+    color: #424242;
+}
+.breadcrumbs .sep {
+    margin: 0 0.5em;
+    color: #b0b0b0;
+}
+.category-index{
+    margin: 0;
+    padding: 0;
+}
+.category-index .category-list .title{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-top: 14px;
+    font-size: 18px;
+    color: #ff6700;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+}
+.category-index .category-list .title p{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 1px solid #b0b0b0;
+    color:#b0b0b0;
+    margin-right: 20px;
+    text-align: center;
+}
+.category-index .category-list .children{
+    border-top: 1px solid #eee;
+    overflow: hidden;
+}
+.category-index .category-list .children .children-list{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    right: -2px;
+    bottom:-2px;
+}
+.category-index .category-list .children .children-list li{
+    float: left;
+    width: 245px;
+    height: 136px;
+    padding-top: 24px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+.category-index .category-list .children .children-list li .thumb{
+    width: 70px;
+    height: 70px;
+}
+.category-index .category-list .children .children-list li .text{
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+

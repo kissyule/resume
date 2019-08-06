@@ -1,0 +1,41 @@
+/*设置通用样式*/
+body {
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+	margin:0;padding:0;
+	position:relative;
+}
+.container {width: 1226px;  margin:0 auto; position: relative}
+*{box-sizing: border-box;}
+html, body, h1, h2, h3, h4, h5, h6,div,input, blockquote, p, pre, dl,dd, li, a, span, caption, th, td,form, fieldset, legend, input, button, textarea, address{
+    margin:0;
+    padding:0;
+    list-style:none;
+	outline:none;
+	border:none;
+}
+.menu,ol,ul{padding:0 0 0 40px}
+dl,menu,ol,ul{margin:1em 0;}
+a {color: #757575;text-decoration: none;  }
+a:hover{color:#ff6700;  }
+img{vertical-align:middle;}
+.lf{float:left}
+.rt{float:right}
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+.clearfix:before{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.hide {
+    display: none !important;
+}
