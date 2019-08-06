@@ -1,41 +1,74 @@
-/*设置通用样式*/
-body {
-    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-    color: #333;
-    background-color: #fff;
-    min-width: 1226px;
-	margin:0;padding:0;
-	position:relative;
+﻿body{
+	font-family: arial,"微软雅黑",sans-serif;;
+	color:#000000;
+	font-size:12px;
+	word-break:break-all;
+	word-wrap:break-word;
+    position:relative;
+	min-width: 1320px;
 }
-.container {width: 1226px;  margin:0 auto; position: relative}
-*{box-sizing: border-box;}
-html, body, h1, h2, h3, h4, h5, h6,div,input, blockquote, p, pre, dl,dd, li, a, span, caption, th, td,form, fieldset, legend, input, button, textarea, address{
-    margin:0;
-    padding:0;
-    list-style:none;
-	outline:none;
-	border:none;
+body, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, ul, a, img {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight: normal;
 }
-.menu,ol,ul{padding:0 0 0 40px}
-dl,menu,ol,ul{margin:1em 0;}
-a {color: #757575;text-decoration: none;  }
-a:hover{color:#ff6700;  }
-img{vertical-align:middle;}
-.lf{float:left}
-.rt{float:right}
-.container:before, .container:after {
-    content: " ";
-    display: table;
+a{
+	text-decoration:none;
+	color:#fff;
 }
-.clearfix:before{
-    content: '';
-    display: table;
+img{
+	border:0px;
 }
-.clearfix:after{
+.clear::after{
     content:"";
     display:block;
     clear:both;
 }
-.hide {
-    display: none !important;
+.clear-box::before{
+    content:"";
+    display:table;
+}
+.out{
+    display:block !important;
+}
+.diamond-icon{
+	display:block;
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-color:#161B25;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* Internet Explorer */
+	-moz-transform:rotate(45deg); /* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	top:-5px;
+	transition:left 0.3s linear;
+}
+.breadcrumb{
+	height:35px;
+	background:#E8E8E8;
+	font-size:12px;
+	color:#535353;
+}
+.breadcrumb>.breadcrumb-frame{
+	width:1300px;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+}
+.breadcrumb a{
+	font-size:12px;
+	color:#535353;
+}
+.breadcrumb>.breadcrumb-frame>ul>li{
+	display:block;
+	float:left;
+	height:35px;
+	line-height:35px;
+}
+.breadcrumb>.breadcrumb-frame>ul>li>span{
+	display:inline-block;
+	margin:0 5px 0 4px;
 }

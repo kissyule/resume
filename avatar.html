@@ -1,0 +1,54 @@
+<div class="uphead-box clear">
+    <div class="uphead-lf">
+        <form id="imgForm" method="POST" enctype="multipart/form-data">
+            <a href="javascript:;" class=a-upload>
+                <input type="file" id="inputImage" name="avatar" accept="image/*">
+                <span></span>
+                上传头像
+            </a>
+        </form>
+        <h2>请选择一张您电脑中的图片，支持JPG、PNG图片类型，图片大小不能大于2M</h2>
+    </div>
+    <div class="newAvatar-box">
+        <div class="newAvatar-background"></div>
+        <img src="" alt="" id="newAvatar">
+        <div class="newAvatar-black">
+            <div class="view-up"></div>
+            <div class="view-box">
+                <span class="tl point"></span>
+                <span class="tr point"></span>
+                <span class="bl point"></span>
+                <span class="br point"></span>
+                <span class="lf line"></span>
+                <span class="rt line"></span>
+                <span class="tp line"></span>
+                <span class="bt line"></span>
+            </div>
+        </div>
+    </div>
+    <div class="uphead-middle"></div>
+    <div class="uphead-rt">
+        <div>
+            <p>
+                <strong>效果预览</strong>
+            </p>
+            <div class="explain">
+                你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰
+            </div>
+        </div>
+        <div class="preview">
+            <div class="img-preview preview-md">
+                <img src="" alt="" id="avatarMd">
+            </div>
+            <p>100X100</p>
+            <div class="img-preview preview-sm">
+                <img src="" alt="" id="avatarSm">
+            </div>
+            <p>50X50</p>
+        </div>
+    </div>
+    <div class="avatar-click">
+        <a href="javascript:;" id="uploadImg" class="unChecked">保存</a>
+        <a href="javascript:;" id="cancelImg" class="unChecked">取消</a>
+    </div>
+</div>

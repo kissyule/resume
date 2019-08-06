@@ -1,0 +1,161 @@
+.details{
+    width:1200px;
+    margin:0 auto;
+}
+.footer-head{
+    background:#f5f5f5;
+}
+.footer-body>.details{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.footer-body>.details>ul{
+    width:1200px;
+}
+.footer-body>.details>ul>li{
+    display:block;
+    float: left;
+    vertical-align:top;
+    margin-right:148px;
+}
+.footer-body>.details>ul>li:last-child{
+    margin-right:0;
+}
+.footer-body>.details>ul>li>a{
+    font-size:14px;
+    color:#000;
+}
+.footer-body>.details>ul>li>ul>li>a{
+    line-height:22px;
+    color:#555;
+    font-size:12px;
+}
+.footer-foot{
+    background:#272727;
+}
+.footer-foot>.details{
+    box-sizing:border-box;
+    padding:44px 0 44px 100px;;
+}
+.footer-foot>.details a{
+    display:block;
+    color:#ccc;
+}
+.footer-foot>.details>ul{
+    width:100%;
+}
+.footer-foot>.details>ul>li{
+    float:left;
+}
+.footer-foot>.details>ul>.about-lenovo,.footer-foot>.details>ul>.lenovo-shopping,.footer-foot>.details>ul>.service-lenovo{
+    width:210px;
+}
+.footer-foot>.details>ul>.lenovo-website-group{
+    width:240px;
+}
+.footer-foot>.details>ul>.social-platform{
+    width:230px;
+}
+.footer-foot>.details>ul>li>a{
+    font-size:16px;
+    font-weight:bold;
+    line-height:16px;
+    margin-bottom:18px;
+}
+.footer-foot>.details>ul>li>ul>li>a{
+    font-size:13px;
+    line-height:13px;
+    margin-bottom:12px;
+}
+.footer-foot>.details>ul>.social-platform>h4{
+    font-weight:bold;
+    font-size:16px;
+    line-height:16px;
+    margin-bottom:18px;
+    color:#ccc;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality{
+    width:100%;
+    margin:2px 0 10px;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li{
+    margin:6px 7px 6px 5px;
+    float:left;
+    width:36px;
+    height:36px;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>a{
+    display:block;
+    width:100%;
+    height:100%;
+    background-image:url(../images/footer/platform_icons_sprits.png);
+    background-repeat:no-repeat;
+    background-position-y: -190px;
+    margin:0;
+    transition:transform .2s linear;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>a:hover{
+    background-position-y: -238px;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>.weichat{
+    background-position-x:-8px;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>.qqzone{
+    background-position-x:-63px;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>.weibo{
+    background-position-x:-119px;
+}
+.footer-foot>.details>ul>.social-platform>.icon-sociality>li>.fun-icon{
+    background-position-x:-176px;
+}
+.footer-foot>.details>ul>.social-platform>.other-sociality>a{
+    float:left;
+    width:82px;
+    height:24px;
+    margin:0 20px 0 5px;
+    background-image:url(../images/footer/platform_icons_sprits.png);
+    background-repeat:no-repeat;
+    background-position-y: -128px;
+}
+.footer-foot>.details>ul>.social-platform>.other-sociality>a:hover{
+    background-position-y: -154px;
+}
+.footer-foot>.details>ul>.social-platform>.other-sociality>.weibo{
+    background-position-x:-8px;
+}
+.footer-foot>.details>ul>.social-platform>.other-sociality>.tieba{
+    background-position-x:-116px;
+}
+.footer-foot>.details>ul>.social-platform>.china-pic{
+    width:186px;
+    height:25px;
+    background:url(../images/footer/china.jpg);
+    margin-top:60px;
+}
+.footer-bot{
+    background:#272727;
+    border-top:1px solid #424141;
+}
+.footer-bot>.details>div{
+    height:46px;
+    line-height:46px;
+    color:#ccc;
+}
+.footer-bot>.details>.bot-lf{
+    float:left;
+}
+.footer-bot>.details>.bot-rt{
+    float:right;
+}
+.footer-bot>.details>div>span{
+    margin:0 6px;
+}
+.footer-bot>.details>div>a{
+    color:#ccc;
+}

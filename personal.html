@@ -1,0 +1,56 @@
+<ul class="user-msg">
+    <li class="clear">
+        <p class="msg-lf">会员账号：</p>
+        <p class="msg-rt" data-msg="phone"></p>
+    </li>
+    <li class="clear">
+        <p class="msg-lf"><span>* </span>会员昵称：</p>
+        <p class="msg-rt"><input type="text" class="msg-input" data-msg="uname"></p>
+        <p class="msg-add">4-20个字符，可由中英文、数字、“_”、“-”组成</p>
+    </li>
+    <li class="clear">
+        <p class="msg-lf"><span>* </span>性别：</p>
+        <p class="msg-rt clear">
+            <input type="radio" name="gender" id="male" class="msg-sex" value="1">
+            <label for="male">男</label>
+            <input type="radio" name="gender" id="female" class="msg-sex" value="0">
+            <label for="female">女</label>
+            <input type="radio" name="gender" id="nomale" class="msg-sex" value="-1">
+            <label for="nomale">保密</label>
+        </p>
+    </li>
+    <li class="clear">
+        <p class="msg-lf"><span>* </span>生日：</p>
+        <p class="msg-rt"><input type="date" class="msg-input" data-msg="birthday" value=""></p>
+    </li>
+    <li class="clear">
+        <p class="msg-lf">真实姓名：</p>
+        <p class="msg-rt"><input type="text" class="msg-input" data-msg="user_name"></p>
+        <p class="msg-add">英文长度:4-20 ，中文长度:2-10</p>
+    </li>
+    <li class="clear">
+        <p class="msg-lf"><span>* </span>居住地：</p>
+        <p class="msg-rt">
+            <select id="province">
+                <option value="0">请选择省份</option>
+            </select>
+            <select id="city">
+                <option value="0">请选择城市</option>
+            </select>
+            <select id="area">
+                <option value="0">请选择区/县</option>
+            </select>
+        </p>
+    </li>
+</ul>
+<div class="msg-avatar">
+    <div class="avatar-border clear-box">
+        <a href="javascript:;" class="old-avatar">
+            <img src="images/header/user.png" alt="">
+        </a>
+        <p class="isChange-avatar">点击更换头像</p>
+    </div>
+</div>
+<div class="msg-change">
+    <input type="button" class="submit" value="修改">
+</div>

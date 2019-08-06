@@ -1,0 +1,9 @@
+$(()=>{
+    $.ajax({
+        type:"GET",
+        url:"footer.html",
+	    xhrFields:{withCredentials:true}
+    }).then(html=>{
+        $("#footer").html(html)
+    })
+})

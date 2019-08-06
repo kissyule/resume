@@ -1,41 +1,55 @@
 <?php
-session_start();
-require("../init.php");
-$uname=$_REQUEST["uname"];
-$upwd=$_REQUEST["upwd"];
-
-$uPattern='/(^[\w.\-]+@(?:[a-z0-9]+(?:-[a-z0-9]+)*\.)+[a-z]{2,3}$)|(^1[3|4|5|8]\d{9}$)/';
-if(!preg_match($uPattern,$uname)){
-   echo '{"code":-2,"msg":"用户名格式不正确"}';
-   exit;
-}
-$pPattern='/^[a-zA-Z0-9]{6,12}$/';
-if(!preg_match($pPattern,$upwd)){
-   echo '{"code":-2,"msg":"密码格式不正确"}';
-   exit;
-}
-$email='/^[\w.\-]+@(?:[a-z0-9]+(?:-[a-z0-9]+)*\.)+[a-z]{2,3}$/';
-$phone='/^1[3|4|5|8]\d{9}$/';
-if(preg_match($email,$uname)){
-    $sql="SELECT uid FROM mi_user WHERE email='$uname' AND";
-    $sql.=" upwd=$upwd";
-    $result=mysqli_query($conn,$sql);
-    $row=mysqli_fetch_row($result);
-}else if(preg_match($phone,$uname)){
-    $sql="SELECT uid FROM mi_user WHERE phone='$uname' AND upwd=$upwd";
-    $result=mysqli_query($conn,$sql);
-    $row=mysqli_fetch_row($result);
-}else{
-   echo '{"code":-1,"msg":"登录失败"}';
-}
-$_SESSION['uid']=$row[0];
-
-if(mysqli_error($conn)){
-  echo mysqli_error($conn);
-}
-if($row!=0){
-   echo '{"code":1,"msg":"登录成功"}';
-}else{
-   echo '{"code":-1,"msg":"登录失败"}';
-}
+	//data/user/login.php
+	require_once('../init.php');
+	@$phone = $_REQUEST['phone'];
+	@$email = $_REQUEST['email'];
+	@$upwd = $_REQUEST['upwd'];
+	$emailReg = '/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/';
+	$phoneReg = '/^1[3|4|5|7|8][0-9]{9}$/';
+	$upwdReg = '/^[a-zA-Z][a-zA-Z0-9_.-]{7,19}$/';
+	if($phone==null&&$email==null){
+	    echo '{"code":-3,"msg":"手机号或邮箱为空"}';
+	    exit;
+	}
+    if($upwd==null){
+    	echo '{"code":-3,"msg":"密码为空"}';
+        exit;
+    }
+	if(!preg_match($upwdReg,$upwd)){
+        echo '{"code":-4,"msg":"密码格式不正确"}';
+        exit;
+    }
+	if(($phone||$email)&&$upwd){
+		if($phone){
+			if(!preg_match($phoneReg,$phone)){
+				echo '{"code":-4,"msg":"手机号格式不正确"}';
+				exit;
+			}
+			$sql = "SELECT uid,phone FROM lx_user WHERE phone = '$phone' AND BINARY upwd = md5('$upwd')";
+		}else{
+			if(!preg_match($emailReg,$email)){
+				echo '{"code":-4,"msg":"邮箱格式不正确"}';
+				exit;
+			}
+			$sql = "SELECT uid,phone FROM lx_user WHERE email = '$email' AND BINARY upwd = md5('$upwd')";
+		}
+		$result = mysqli_query($conn,$sql);
+		$row = mysqli_fetch_assoc($result);
+		if($row){
+			session_start();
+			$_SESSION['uid'] = $row['uid'];
+			$output = [
+				'code'=>1,
+				'msg'=>'登陆成功',
+				'data'=>$row
+			];
+			echo json_encode($output);
+		}else{
+			if($phone){
+				echo '{"code":-1,"msg":"手机号或密码错误"}';
+			}else{
+				echo '{"code":-2,"msg":"邮箱或密码错误"}';
+			}
+		}
+	}
 ?>

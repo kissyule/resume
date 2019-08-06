@@ -1,0 +1,122 @@
+.shop-all{
+    display:block;
+    position:absolute;
+    height:406px;
+    width:190px;
+    background:#ffffff;
+    z-index:10;
+}
+.shop-all a{
+    color:black;
+}
+.shop-all a:hover{
+    color:red;
+}
+.shop-all>li{
+    height:45px;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #e6e6e6;
+    border-top:none;
+    position:relative;
+}
+.shop-all>li:hover{
+    background: #f7f7f7;
+    border-right:none;
+}
+.shop-all>li>a{
+    font-weight:normal;
+    display:block;
+    line-height:44px;
+    width:100%;
+    box-sizing:border-box;
+    padding-left:24px;
+    font-size:15px;
+}
+.shop-all>li:hover>a{
+    color:red;
+}
+.shop-all>li>.shop-bag{
+    position:absolute;
+    width:1010px;
+    height:406px;
+    left:189px;
+    background:#f7f7f7;
+    top:0;
+    display:none;
+    box-sizing:border-box;
+    padding:0 22px 20px 52px;
+    border:1px solid #e6e6e6;
+    border-left:none;
+}
+.shop-all>li:nth-child(2)>.shop-bag{
+    top:-45px;
+}
+.shop-all>li:nth-child(3)>.shop-bag{
+    top:-90px;
+}
+.shop-all>li:nth-child(4)>.shop-bag{
+    top:-135px;
+}
+.shop-all>li:nth-child(5)>.shop-bag{
+    top:-180px;
+}
+.shop-all>li:nth-child(6)>.shop-bag{
+    top:-225px;
+}
+.shop-all>li:nth-child(7)>.shop-bag{
+    top:-270px;
+}
+.shop-all>li:nth-child(8)>.shop-bag{
+    top:-315px;
+}
+.shop-all>li:nth-child(9)>.shop-bag{
+    top:-360px;
+}
+.shop-all>li:hover>.shop-bag{
+    display:block;
+}
+.shop-all>li>.shop-bag>.shop-lf{
+    width:630px;
+    float:left;
+    margin-top:20px;
+}
+.shop-all>li>.shop-bag>.shop-lf>.shop-lfa{
+    margin-top:15px;
+}
+.shop-all>li>.shop-bag>.shop-lf>.shop-lfa a{
+    font-size:13px;
+}
+.shop-all>li>.shop-bag>.shop-lf>.shop-lfa>ul{
+    margin-left:55px;
+    border-bottom:1px solid #e5e5e5;
+    width:575px;
+    padding-bottom:5px;
+    padding-top:2px;
+}
+.shop-all>li>.shop-bag>.shop-lf>.shop-lfa>ul>li{
+    float:left;
+    font-size:12px;
+    height:20px;
+    line-height:20px;
+}
+.shop-all>li>.shop-bag>.shop-lf>.shop-lfa>ul>li>a{
+    border-left:1px solid #e5e5e5;
+    padding-left:12px;
+    padding-right:12px;
+    white-space:nowrap;
+    font-size:12px;
+}
+.shop-all>li>.shop-bag>.shop-rt{
+    float:right;
+    width:252px;
+    margin-top:20px;
+}
+.shop-all>li>.shop-bag>.shop-rt>a{
+    display:block;
+}
+.shop-all>li>.shop-bag>.shop-rt>a>img{
+    width:252px;
+    height:160px;
+    margin-bottom:5px;
+}

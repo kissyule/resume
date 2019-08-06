@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>个人中心</title>
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/header.css" rel="stylesheet" />
+		<link href="css/nav.css" rel="stylesheet" />
+		<link href="css/info.css" rel="stylesheet" />
+		<link href="css/menu.css" rel="stylesheet" />
+		<link href="css/footer.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/city.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/info.js"></script>
+		<script src="js/footer.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+        <nav id="nav"></nav>
+        <div class="breadcrumb">
+			<div class="breadcrumb-frame">
+				<ul class="clear">
+					<li>
+						<a href="index.html">首页</a>
+						<span>&gt;</span>
+					</li>
+					<li>
+						<a href="info.html">会员中心</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+        <div class="user-main clear">
+            <div class="user-lf">
+                <ul class="user-list">
+                    <li>
+                        <h3 href="#">账户中心</h3>
+                    </li>
+                    <li class="active" data-num="1">
+                        <a href="#">个人信息</a>
+                    </li>
+                    <li data-num="2">
+                        <a href="#">修改头像</a>
+                    </li>
+                    <li data-num="3">
+                        <a href="#">修改密码</a>
+                    </li>
+                    <li data-num="4">
+                        <a href="#">我的收藏</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-rt">
+                <p class="title" data-avatar="">个人信息</p>
+                <div class="personal clear">
+                    <!-- 请求内容插入 -->
+                </div>
+            </div>
+        </div>
+		<footer id="footer"></footer>
+	</body>
+</html>
